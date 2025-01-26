@@ -1,4 +1,4 @@
-#!/Users/jaysteezy/Documents/Development/IrvineHacks Winter '25/Freshventory-Backend/venv/bin/python3
+#!/Users/katienam/irvinehacks2025/backend/venv/bin/python3.11
 # -*- coding: utf-8 -*-
 # Copyright 2024 Google LLC
 #

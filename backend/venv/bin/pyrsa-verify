@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/jaysteezy/Documents/Development/IrvineHacks Winter '25/Freshventory-Backend/venv/bin/python3" "$0" "$@"
-' '''
+#!/Users/katienam/irvinehacks2025/backend/venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
