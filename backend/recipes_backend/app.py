@@ -1,20 +1,13 @@
-import firebase_admin
-from firebase_admin import credentials, firestore
+from fastapi import FastAPI
+from .routes.ingredients import router as ingredients_router
+from .routes.recipes import router as recipes_router
 
-# Provide the path to your Firebase service account JSON file
-cred = credentials.Certificate("BackendApp/.env")
+app = FastAPI(title="Recipes Backend")
 
-# Initialize Firebase app
-firebase_admin.initialize_app(cred)
+# Register the routers
+app.include_router(ingredients_router, prefix="/api/ingredients", tags=["Ingredients"])
+app.include_router(recipes_router, prefix="/api/recipes", tags=["Recipes"])
 
-# Example: Initialize Firestore
-db = firestore.client()
-
-# Example: Add data to Firestore
-doc_ref = db.collection("users").document("user_id")
-doc_ref.set({
-    "name": "Test",
-    "email": "Test@email.com"
-})
-
-print("Data written to Firestore")
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the Recipes Backend"}

@@ -20,7 +20,7 @@
 # print("Data written to Firestore")
 
 import firebase_admin
-from firebase_admin import credentials
+from firebase_admin import credentials, firestore
 import os
 from dotenv import load_dotenv
 
@@ -36,5 +36,7 @@ if not firebase_key_path:
 # Initialize Firebase with the service account JSON
 cred = credentials.Certificate(firebase_key_path)
 firebase_admin.initialize_app(cred)
+
+db = firestore.client()
 
 print("Firebase initialized successfully!")
