@@ -130,7 +130,7 @@ async def process_image(document_id: str):
     
 def infer_image_with_aicook(image_data: bytes):
     try:
-        aicook_api_url = "https://detect.roboflow.com/aicook-lcv4d/3"
+        aicook_api_url = "x"
         api_key = "fAwcjwOeWTzCAttEENEQ"
 
         # Send the image file to the AI Cook API
