@@ -1,29 +1,14 @@
-# certifi==2024.12.14
-# charset-normalizer==3.4.1
-# idna==3.10
-# python-multipart==0.0.20
-# requests==2.32.3
-# urllib3==2.3.0
-# firebase-admin
-
-# Web Framework
-fastapi==0.100.0  # FastAPI framework for building APIs
-uvicorn==0.22.0   # ASGI server to run FastAPI
-
-# Environment Variable Management
-python-dotenv==1.0.0  # Load .env files for configuration
-
-# HTTP Requests
-requests==2.32.3      # For API calls (Spoonacular API)
-urllib3==2.3.0        # HTTP library dependency for requests
-idna==3.10            # Internationalized domain names support
+certifi==2024.12.14
 charset-normalizer==3.4.1
-
-# Firebase Admin SDK
-firebase-admin==6.1.0  # Firebase integration
-
-# Multipart Form Data (if needed for future file uploads)
+idna==3.10
 python-multipart==0.0.20
-
-# Certificate Handling
-certifi==2024.12.14  # For SSL certificate verification
+requests==2.32.3
+urllib3==2.3.0
+firebase-admin
+inference-sdk
+certifi==2024.12.14
+fastapi==0.100.0
+uvicorn==0.22.0 
+urllib3==2.3.0
+idna==3.10
+charset-normalizer==3.4.1
